@@ -1,0 +1,104 @@
+body {
+    background-color: rgb(128,0,128);
+    min-height: 100vh;
+     width: 100vw;
+     display: flex;
+     flex-direction: column;
+     flex: 1;
+     justify-content: center;
+     align-items: center;
+     margin: 0;
+  }
+
+  /* DIGITAL CLOCK ==========>>>>>>>>>>>>>*/
+  
+  #clock {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 65px;
+    font-weight: 600;
+    text-align: center;
+    display: block;
+  }
+  
+  #date {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    visibility: hidden;
+  }
+  
+   .showdate {
+      margin: 20px;
+      width: 75px;
+      height: 50px;
+      background-color: rgb(42,157,143);
+      color: white;
+      border-radius: 10px;
+      
+  }
+  
+  /* ANALOG CLOCK ==========>>>>>>>>>>>>>*/
+  
+  #analog {
+     display: none;
+  }
+  
+  .clock {
+     position: relative;
+     width: 240px;
+     height: 240px;
+     border: 16px solid #F0C952;
+     border-radius: 50%;
+     padding: 20px;
+     box-shadow: 20px 20px 0px rgba(0,0,0,.5);
+  }
+  
+  .clock-face {
+     height: 100%;
+     width: 100%;
+     position: relative;
+  }
+  
+  .hand {
+     position: absolute;
+     width: 50%;
+     background: white;
+     top: 50%;
+     transform: rotate(90deg);
+     transform-origin: 100%;
+     transition: all 0.05s cubic-bezier(0.1, 2.7, 0.58, 1);
+  }
+  
+  .circle {
+     width: 24px;
+     height: 24px;
+     background: white;
+     border: 4px solid #232020;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     margin-left: -14px;
+     margin-top: -14px;
+     border-radius: 50%;
+  }
+  
+  .secHand {
+     height: 2px;
+     border-radius: 1px;
+     background: #F0C952;
+  }
+  
+  .minHand {
+     height: 4px;
+     border-radius: 4px;
+  }
+  
+  .hourHand {
+     height: 8px;
+     border-radius: 4px;
+     width: 35%;
+     left: 15%;
+  }
